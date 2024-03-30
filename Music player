@@ -1,1 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#musicLibrary,
+#playlist {
+    margin-top: 30px; /* Adjust as needed */
+}
+
+#audioControls {
+    margin-top: 30px; /* Adjust as needed */
+}
+span {
+    margin-top: 15px;
+}
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">Music Player</span>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Music Library -->
+<div class="row">
+    <div class="col-md-8">
+        <h2>Music Library</h2>
+        <div id="musicLibrary">
+            <!-- Display list of available tracks with album covers, artist names, and add to playlist buttons -->
+            <div class="track">
+                <img src="album_cover1.jpg" alt="Album Cover">
+                <div>
+                    <h4>Shape of you</h4>
+                    <p>Ed sheeran</p>
+                    <button class="btn btn-success addToPlaylist" data-title="SHAPE OF YOU" data-artist="ED SHEERAN" data-audio="song1.mp3" data-cover="album_cover1.jpg">Add to Playlist</button>
+                </div>
+            </div>
+               
+    <!-- Audio Controls -->
+    <div class="row mt-4">
+        <div class="col">
+            <audio id="audioPlayer" controls>
+                <!-- Audio player controls will be added dynamically -->
+            </audio>
+            <div>
+                <!-- Progress Bar -->
+                <progress id="progressBar" value="0" max="100"></progress>
+                <!-- Add shuffle, repeat, play/pause, next, and previous buttons -->
+                <button id="shuffleBtn" class="btn btn-secondary">Shuffle</button>
+                <button id="repeatBtn" class="btn btn-secondary">Repeat</button>
+                <button id="previousBtn" class="btn btn-secondary">Previous</button>
+                <button id="playPauseBtn" class="btn btn-primary">Play</button>
+                <button id="nextBtn" class="btn btn-secondary">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="track">
+                <img src="album_cover2.jpg" alt="Album Cover">
+                <div>
+                    <h4>Adigaa</h4>
+                    <p>Karthik</p>
+                    <button class="btn btn-success addToPlaylist" data-title="ADIGAA" data-artist="KARTHIK" data-audio="song2.mp3" data-cover="album_cover2.jpg">Add to Playlist</button>
+                </div>
+            </div>
+               
+    <!-- Audio Controls -->
+    <div class="row mt-4">
+        <div class="col">
+            <audio id="audioPlayer" controls>
+                <!-- Audio player controls will be added dynamically -->
+            </audio>
+            <div>
+                <!-- Progress Bar -->
+                <progress id="progressBar" value="0" max="100"></progress>
+                <!-- Add shuffle, repeat, play/pause, next, and previous buttons -->
+                <button id="shuffleBtn" class="btn btn-secondary">Shuffle</button>
+                <button id="repeatBtn" class="btn btn-secondary">Repeat</button>
+                <button id="previousBtn" class="btn btn-secondary">Previous</button>
+                <button id="playPauseBtn" class="btn btn-primary">Play</button>
+                <button id="nextBtn" class="btn btn-secondary">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+<pre>
+
+
+
+</pre>
+<div class="track">
+    <pre>
+
+
+    </pre>
+    <img src="album_cover3.jpg" alt="Album Cover">
+    <div>
+        <h4>Nuv unte na jathaga</h4>
+        <p>AR Rehman</p>
+        <button class="btn btn-success addToPlaylist" data-title="NUV UNTE NA JATHAGA" data-artist="AR REHMAN" data-audio="song3.mp3" data-cover="album_cover3.jpg">Add to Playlist</button>
+    </div>
+</div>
+   
+<!-- Audio Controls -->
+<div class="row mt-4">
+<div class="col">
+<audio id="audioPlayer" controls>
+    <!-- Audio player controls will be added dynamically -->
+</audio>
+<div>
+    <!-- Progress Bar -->
+    <progress id="progressBar" value="0" max="100"></progress>
+    <!-- Add shuffle, repeat, play/pause, next, and previous buttons -->
+    <button id="shuffleBtn" class="btn btn-secondary">Shuffle</button>
+    <button id="repeatBtn" class="btn btn-secondary">Repeat</button>
+    <button id="previousBtn" class="btn btn-secondary">Previous</button>
+    <button id="playPauseBtn" class="btn btn-primary">Play</button>
+    <button id="nextBtn" class="btn btn-secondary">Next</button>
+</div>
+</div>
+</div>
+</div>
+<div class="track">
+    <img src="album_cover4.jpg" alt="Album Cover">
+    <div>
+        <h4>hi nanna</h4>
+        <p>Karthik</p>
+        <button class="btn btn-success addToPlaylist" data-title="HI NANNA" data-artist="KARTHIK" data-audio="song2.mp3" data-cover="album_cover4.jpg">Add to Playlist</button>
+    </div>
+</div>
+   
+<!-- Audio Controls -->
+<div class="row mt-4">
+<div class="col">
+<audio id="audioPlayer" controls>
+    <!-- Audio player controls will be added dynamically -->
+</audio>
+<div>
+    <!-- Progress Bar -->
+    <progress id="progressBar" value="0" max="100"></progress>
+    <!-- Add shuffle, repeat, play/pause, next, and previous buttons -->
+    <button id="shuffleBtn" class="btn btn-secondary">Shuffle</button>
+    <button id="repeatBtn" class="btn btn-secondary">Repeat</button>
+    <button id="previousBtn" class="btn btn-secondary">Previous</button>
+    <button id="playPauseBtn" class="btn btn-primary">Play</button>
+    <button id="nextBtn" class="btn btn-secondary">Next</button>
+</div>
+</div>
+</div>
+</div>
+            <!-- Repeat for each track -->
+<div class="track">
+    <img src="album_cover5.jpg" alt="Album Cover">
+    <div>
+        <h4>ORANGE</h4>
+        <p>Karthik</p>
+        <button class="btn btn-success addToPlaylist" data-title="ORANGE" data-artist="KARTHIK" data-audio="song5.mp3" data-cover="album_cover5.jpg">Add to Playlist</button>
+    </div>
+</div>
+   
+<!-- Audio Controls -->
+<div class="row mt-4">
+<div class="col">
+<audio id="audioPlayer" controls>
+    <!-- Audio player controls will be added dynamically -->
+</audio>
+<div>
+    <!-- Progress Bar -->
+    <progress id="progressBar" value="0" max="100"></progress>
+    <!-- Add shuffle, repeat, play/pause, next, and previous buttons -->
+    <button id="shuffleBtn" class="btn btn-secondary">Shuffle</button>
+    <button id="repeatBtn" class="btn btn-secondary">Repeat</button>
+    <button id="previousBtn" class="btn btn-secondary">Previous</button>
+    <button id="playPauseBtn" class="btn btn-primary">Play</button>
+    <button id="nextBtn" class="btn btn-secondary">Next</button>
+</div>
+</div>
+</div>
+</div>
+            <!-- Repeat for each track -->
+        </div>
+    </div>
+    <!-- Playlist Management -->
+    <div class="col-md-4">
+        <h2>Playlist</h2>
+        <div id="playlist">
+            <!-- Display user's playlist -->
+        </div>
+    </div>
+
+
+<script>
+    $(document).ready(function() {
+        // Define playlist array to store user's selected tracks
+        var playlist = [];
+
+        // Event listener for adding a track to the playlist
+        $('.addToPlaylist').on('click', function() {
+            var title = $(this).data('title');
+            var artist = $(this).data('artist');
+            var audioSrc = $(this).data('audio');
+            var coverSrc = $(this).data('cover');
+            var track = { title: title, artist: artist, audioSrc: audioSrc, coverSrc: coverSrc };
+            
+            // Check if the track is already in the playlist
+            var existsInPlaylist = playlist.some(function(item) {
+                return item.audioSrc === track.audioSrc;
+            });
+
+            // If the track is not already in the playlist, add it
+            if (!existsInPlaylist) {
+                playlist.push(track);
+                updatePlaylist();
+            }
+        });
+
+        // Function to update the playlist display
+        function updatePlaylist() {
+            $('#playlist').empty(); // Clear existing playlist
+            // Append each track to the playlist display
+            playlist.forEach(function(track, index) {
+                var listItem = $('<div class="track"><img src="' + track.coverSrc + '" alt="Album Cover"><div><h4>' + track.title + '</h4><p>' + track.artist + '</p></div></div>');
+                $('#playlist').append(listItem);
+            });
+        }
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        // Define playlist and current track index
+        var playlist = [
+            { title: "shape of you", artist: "ed sheeran", audioSrc: "song1.mp3", coverSrc: "album1.jpg" },
+            { title: "adigaa", artist: "karthik", audioSrc: "song2.mp3", coverSrc: "album2.jpg" },
+            { title: "Nuv unte na jathaga", artist: "AR Rehman", audioSrc: "song3.mp3", coverSrc: "album3.jpg" },
+            { title: "hi nanna", artist: "karthik", audioSrc: "song4.mp3", coverSrc: "album4.jpg" },
+            { title: "ORANGE", artist: "karthik", audioSrc: "song5.mp3", coverSrc: "album5.jpg" },
+            // Add more tracks as needed
+
+        ];
+        var currentTrackIndex = 0;
+        var audioPlayer = $('#audioPlayer')[0];
+
+        // Function to update audio player with current track
+        function updateAudioPlayer() {
+            var currentTrack = playlist[currentTrackIndex];
+            $('#audioPlayer').attr('src', currentTrack.audioSrc);
+            $('#audioPlayer').attr('title', currentTrack.title + ' - ' + currentTrack.artist);
+            // Update album cover and track info
+            // Implement this part based on your design
+        }
+
+        // Function to play/pause audio
+        $('#playPauseBtn').on('click', function() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                $(this).text('Pause');
+            } else {
+                audioPlayer.pause();
+                $(this).text('Play');
+            }
+        });
+
+        // Function to play next track
+        $('#nextBtn').on('click', function() {
+            currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+            updateAudioPlayer();
+            audioPlayer.play();
+            $('#playPauseBtn').text('Pause');
+        });
+
+        // Function to play previous track
+        $('#previousBtn').on('click', function() {
+            currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
+            updateAudioPlayer();
+            audioPlayer.play();
+            $('#playPauseBtn').text('Pause');
+        });
+
+        // Event listener for audio time update
+        audioPlayer.addEventListener('timeupdate', function() {
+            // Update progress bar
+            var currentTime = audioPlayer.currentTime;
+            var duration = audioPlayer.duration;
+            var progress = (currentTime / duration) * 100;
+            $('#progressBar').attr('value', progress);
+        });
+
+        // Function to shuffle playlist
+        $('#shuffleBtn').on('click', function() {
+            playlist.sort(function() { return 0.5 - Math.random() });
+            updateAudioPlayer();
+            audioPlayer.play();
+            $('#playPauseBtn').text('Pause');
+        });
+
+        // Function to toggle repeat mode
+        var repeatMode = false;
+        $('#repeatBtn').on('click', function() {
+            repeatMode = !repeatMode;
+            $(this).toggleClass('active', repeatMode);
+        });
+
+        // Function to handle end of audio playback
+        audioPlayer.addEventListener('ended', function() {
+            if (repeatMode) {
+                audioPlayer.currentTime = 0;
+                audioPlayer.play();
+            } else {
+                currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+                updateAudioPlayer();
+                audioPlayer.play();
+            }
+        });
+
+        // Initialize audio player with first track
+        updateAudioPlayer();
+    });
+</script>
+
+
+</body>
+</html>
 
